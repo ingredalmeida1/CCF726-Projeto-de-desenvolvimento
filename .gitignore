@@ -1,0 +1,17 @@
+data/
+*.npy
+*.npz
+*.pkl
+*.parquet
+*.feather
+*.csv
+results/
+ckpt/
+checkpoints/
+runs/
+logs/
+plots/
+*.png
+*.pdf
+*.svg
+.DS_Store
