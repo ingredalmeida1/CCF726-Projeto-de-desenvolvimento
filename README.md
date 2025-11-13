@@ -43,7 +43,7 @@ Na disciplina, a meta prática foi consolidar esse conhecimento sobre representa
 
 Métricas-chave: **F1**, **Precisão**, **Recall** (comércio costuma preferir alto recall para reduzir FN), além de **AUROC**/**AUPRC**. A decisão final usa limiar (thr) calibrado na validação.
 
-## Base de Dados Utilizada
+## Base de dados utilizada
 
 **IBM Transactions for Anti-Money Laundering (AML)**
 
