@@ -33,7 +33,7 @@ Na disciplina, a meta prática foi consolidar esse conhecimento sobre representa
 
 ## Definição do problema
 
-> Dado um histórico de transações entre contas, classificar se uma transação é ilícita (classe 1) ou lícita (classe 0), usando:
+Dado um histórico de transações entre contas, classificar se uma transação é ilícita (classe 1) ou lícita (classe 0), usando:
 
 * Atributos da aresta (valor, par de moedas, formato de pagamento, tempo desde última transação, rollings/EWMs do remetente/destinatário etc.);
 
@@ -43,7 +43,7 @@ Na disciplina, a meta prática foi consolidar esse conhecimento sobre representa
 
 Métricas-chave: **F1**, **Precisão**, **Recall** (comércio costuma preferir alto recall para reduzir FN), além de **AUROC**/**AUPRC**. A decisão final usa limiar (thr) calibrado na validação.
 
-## Base de Dados Utilizada
+## Base de dados utilizada
 
 **IBM Transactions for Anti-Money Laundering (AML)**
 
@@ -51,9 +51,9 @@ Kaggle: *ealtman2019/ibm-transactions-for-anti-money-laundering-aml*
 
 Informações gerais:
 
-> * ~5,08 milhões de transações.
-> * Colunas principais: `timestamp`, `src_account`, `dst_account`, `amount_paid/received`, `pay/recv_currency`, `payment_format`, `label (0/1)`, `fx_spread`, etc.
-> * Desbalanceamento forte representando o mundo real (ilícitas ≪ lícitas): utilizado class_weight e tuning de limiar para lidar com essa característica.
+* ~5,08 milhões de transações.
+* Colunas principais: `timestamp`, `src_account`, `dst_account`, `amount_paid/received`, `pay/recv_currency`, `payment_format`, `label (0/1)`, `fx_spread`, etc.
+* Desbalanceamento forte representando o mundo real (ilícitas ≪ lícitas): utilizado class_weight e tuning de limiar para lidar com essa característica.
 
 ## Referências
 
